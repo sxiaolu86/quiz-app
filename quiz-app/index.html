@@ -9,7 +9,7 @@
   <body>
     <main role="main">
         <header>
-    <h1>A Fun Quiz on Chinese food</h1>
+    <h1>A Fun Quiz on American Chinese Food</h1>
   </header>
 
   <main>
@@ -24,19 +24,19 @@
       <form>
       <fieldset>
       <label class="answerOption">
-      <input type="radio" value="${STORE[questionNumber].answers[0]}" name="answer" required>
+      <input type="radio" name="answer" required>
       <span>choice A</span>
       </label>
       <label class="answerOption">
-      <input type="radio" value="${STORE[questionNumber].answers[1]}" name="answer" required>
+      <input type="radio" name="answer" required>
       <span>choice B</span>
       </label>
       <label class="answerOption">
-      <input type="radio" value="${STORE[questionNumber].answers[2]}" name="answer" required>
+      <input type="radio" name="answer" required>
       <span>choice C</span>
       </label>
       <label class="answerOption">
-      <input type="radio" value="${STORE[questionNumber].answers[3]}" name="answer" required>
+      <input type="radio" name="answer" required>
       <span>Choice D</span>
       </label>
       <button type="submit" class="submitButton">Submit</button>
@@ -45,18 +45,20 @@
     </div>
 
     <div class="container" id="screen-right">
-      <h2>That's right!</h2>
-      <button type="button" class="start-button" id="btn-start">Continue</button>
+      <h2>That's correct!</h2>
+      <p>[right answer] is correct!</p>
+      <button type="button" class="start-button" id="btn-continue">Continue</button>
     </div>
 
     <div class="container" id="screen-wrong">
-      <h2>That's not right</h2>
-      <button type="button" class="start-button" id="btn-start">Continue</button>
+      <h2>That's incorrect</h2>
+      <p>The right answer is [right answer]</p>
+      <button type="button" class="start-button" id="btn-continue">Continue</button>
     </div>
 
-    <div class="container" id="screen-wrong">
+    <div class="container" id="screen-final">
       <h2>Here is your score below</h2>
-      <button type="button" class="start-button" id="btn-start">Retake Quiz</button>
+      <button type="button" class="start-button" id="btn-restart">Retake Quiz</button>
     </div>
 
   </main> 
