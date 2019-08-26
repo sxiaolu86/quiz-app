@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>repl.it</title>
+    <title>Chinese Food Quiz</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
@@ -14,12 +14,51 @@
 
   <main>
     
-    <div class="startPage">
-      <h2 class="startQuiz">See if you can get all 8 questions right!</h2>
-      <button type="button" class="quizButton" id="start"><img class=" logo" src="https://media-cdn.tripadvisor.com/media/photo-s/04/98/48/af/ming-garden-chinese-restaurant.jpg" alt="The entrance of a well-lite Chinese Restaurant"> Start Here</button>
+    <div class="container" id="screen-welcome">
+      <h2>See if you can get all 8 questions right!</h2>
+      <button type="button" class="start-button" id="btn-start">Start Here</button>
     </div>
-    <div class="quizMain"></div>
-    
+
+    <div class="container" id="screen-question">
+      <h2>Questions goes here</h2>
+      <form>
+      <fieldset>
+      <label class="answerOption">
+      <input type="radio" value="${STORE[questionNumber].answers[0]}" name="answer" required>
+      <span>choice A</span>
+      </label>
+      <label class="answerOption">
+      <input type="radio" value="${STORE[questionNumber].answers[1]}" name="answer" required>
+      <span>choice B</span>
+      </label>
+      <label class="answerOption">
+      <input type="radio" value="${STORE[questionNumber].answers[2]}" name="answer" required>
+      <span>choice C</span>
+      </label>
+      <label class="answerOption">
+      <input type="radio" value="${STORE[questionNumber].answers[3]}" name="answer" required>
+      <span>Choice D</span>
+      </label>
+      <button type="submit" class="submitButton">Submit</button>
+      </fieldset>
+      </form>
+    </div>
+
+    <div class="container" id="screen-right">
+      <h2>That's right!</h2>
+      <button type="button" class="start-button" id="btn-start">Continue</button>
+    </div>
+
+    <div class="container" id="screen-wrong">
+      <h2>That's not right</h2>
+      <button type="button" class="start-button" id="btn-start">Continue</button>
+    </div>
+
+    <div class="container" id="screen-wrong">
+      <h2>Here is your score below</h2>
+      <button type="button" class="start-button" id="btn-start">Retake Quiz</button>
+    </div>
+
   </main> 
    
   <footer>
