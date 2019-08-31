@@ -4,22 +4,23 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Chinese Food Quiz</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
     <main role="main">
-        <header>
-    <h1>A Fun Quiz on American Chinese Food</h1>
+  <header>
+    <h1 class ="cs-no-margin">Chinese Food Quiz</h1>
+    <p class ="cs-no-margin">with Gordon Ramsay</p>
   </header>
-
-  <main>
-    
-    <div class="container" id="screen-welcome">
-      <h2>See if you can get all 8 questions right!</h2>
-      <button type="button" class="start-button" id="btn-start">Start Here</button>
+    <div class ='container' id="js-screen-welcome">
+      <img class="Icon" src="data:image/jpeg;base64,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" alt="Gordon is in the kitchen as you walked in">
+      <h2 class="cs-no-margin">Ramsay: </h2>
+      <h2 class="cs-no-margin">8 quesitons. There's only one correct answer out of 4 multiple choices. Are you ready?</h2>
+      <button type="button" id="js-btn-start">Start Quiz</button>
     </div>
 
-    <div class="container" id="screen-question">
+    <div class="container" id="js-screen-quiz">
       <h2>Questions goes here</h2>
       <form>
       <fieldset>
@@ -44,33 +45,24 @@
       </form>
     </div>
 
-    <div class="container" id="screen-right">
-      <h2>That's correct!</h2>
-      <p>[right answer] is correct!</p>
-      <button type="button" class="start-button" id="btn-continue">Continue</button>
-    </div>
-
-    <div class="container" id="screen-wrong">
-      <h2>That's incorrect</h2>
+    <div class="container" id="js-screen-result">
+      <h2>Right or Wrong</h2>
       <p>The right answer is [right answer]</p>
-      <button type="button" class="start-button" id="btn-continue">Continue</button>
+      <button type="button"  class="js-btn-continue">Continue</button>
     </div>
 
-    <div class="container" id="screen-final">
-      <h2>Here is your score below</h2>
-      <button type="button" class="start-button" id="btn-restart">Retake Quiz</button>
+    <div class="container" id="js-screen-final">
+      <h2>Final Score Here</h2>
+      <button type="button" class="btn-restart">Retake Quiz</button>
     </div>
-
-  </main> 
-   
-  <footer>
-      <ul>
-        <li>Question <span class="questionNumber">0</span> of 10</li>
-        <li>Score <span class="score">0</span>/10</li>
-      </ul>
+  </main>
+       
+  <footer id="js-footer-score">
+    <p>Question <span id="js-span-gameProgress">1</span> / 8</p>
+    <p>Scored <span id="js-span-score">0</span> Points</p>
   </footer>
-    
-    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

@@ -1,45 +1,84 @@
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 body {
     font-family: 'Metrophobic', sans-serif;
-    background-color: #ffffff;
-    /*background: url('https://media-cdn.tripadvisor.com/media/photo-s/04/98/48/af/ming-garden-chinese-restaurant.jpg') fixed;
-    */
-    color: #363946;
-    background-repeat: no-repeat;
+    background-color: 	#800000;
 }
-
-main {
-    margin: 20px, auto;
+main{
+    width: 600px;
+    margin: auto;
+    margin-top: 30px;
 }
-
-label{
-    display: block;
-    margin-bottom: 20px;
-    text-align: center;
-
-}
-
-h1, h2, p {
-    text-align: center;
-    color: black;
-    /*background-color: rgba(235, 122, 17, 0.3);*/
-    margin-bottom: 20px;
-}
-
-.container {
+fieldset{
+    width: 500px;
     height: 500px;
-    border: 2px, gray;
+    margin:auto;
+    border: 0;
 }
-
-fieldset {
-    height: 450px;
-}
-
 button {
     display: block;
     margin:auto;
+    font-size: 45px;
+    background-color: red;
+    color: yellow;
+    padding: 5px;
+    margin-top: 25px;
 }
+label{
+    margin-bottom: 3px;
+    margin-top: 3px;
+    text-align: left;
+    color: 	#800000;
+    background-color: white;
+    font-size: 30px;
+    display: block;
+}
+img {
+    border-radius: 4px;
+    padding: 5px;
+    height: 75%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+h1, h2, h3, p, footer {
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+.container {
+    height: 310px;
+}
+.cs-no-margin{
+    margin: 0;
+}
+#js-footer-score {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+#btn-start{
+    margin: auto, auto;
+}
+#js-choice-form{
+    width: 80%;
+}
+#js-screen-welcome, #js-screen-final{
+    background: url('https://media-cdn.tripadvisor.com/media/photo-s/04/98/48/af/ming-garden-chinese-restaurant.jpg') fixed;
+}
+@media(max-width:600px){
+    main, fieldset, button, img{
+        width: 100%;
+        margin: auto;
+    }
+    button{
+        font-size: 20px
+    }
+    img{
+        width: 75%;
+    }
+}
+	
+	
+	
